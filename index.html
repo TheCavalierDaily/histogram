@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+           
+    ['Professor', 'Assistant Professor', 'Associate Professor', 'Instructor/Lecturer'],
+    // [Avg salary range for prof, for assist, for  assoc, for instr/lec ]
+    [360000,null,null,null],
+    [272000,null,null,null],
+    [238000,null,null,null],
+    [219000,null,null,null],
+    [208000,null,null,null],
+    [198000,null,null,null],
+    [186000,null,null,null],
+    [176000,null,null,null],
+    [165000,null,null,null],
+    [154000,null,null,null],
+    [145000,null,null,null],
+    [137000,null,null,null],
+    [130000,null,null,null],
+    [125000,null,null,null],
+    [118000,null,null,null],
+    [111000,null,null,null],
+    [104000,null,null,null],
+    [100000,null,null,null],
+    [100000,null,null,null],
+    [99000,null,null,null],
+    [89500,null,null,null],
+    [57300,null,null,null],
+    [null,159000,null,null],
+    [null,120000,null,null],
+    [null,105000,null,null],
+    [null,100000,null,null],
+    [null,100000,null,null],
+    [null,100000,null,null],
+    [null,100000,null,null],
+    [null,100000,null,null],
+    [null,100000,null,null],
+    [null,98600,null,null],
+    [null,90100,null,null],
+    [null,83600,null,null],
+    [null,79400,null,null],
+    [null,74700,null,null],
+    [null,70800,null,null],
+    [null,66700,null,null],
+    [null,54300,null,null],
+    [null,18700,null,null],
+    [null,null,211000,null],
+    [null,null,160000,null],
+    [null,null,137000,null],
+    [null,null,124000,null],
+    [null,null,112000,null],
+    [null,null,103000,null],
+    [null,null,100000,null],
+    [null,null,100000,null],
+    [null,null,100000,null],
+    [null,null,100000,null],
+    [null,null,99500,null],
+    [null,null,94900,null],
+    [null,null,90400,null],
+    [null,null,85800,null],
+    [null,null,82300,null],
+    [null,null,78600,null],
+    [null,null,71100,null],
+    [null,null,35800,null],
+    [null,null,null,116000],
+     [null,null,null,70200],
+    [null,null,null,60700],
+    [null,null,null,55200],
+    [null,null,null,50100],
+    [null,null,null,38300],
+    [null,null,null,30400],
+    [null,null,null,22000]
+  ]);
+
+  var options = {
+    title: 'Salary Distribution Across the Academic Hierarchy, 2014-2015',
+    legend: { position: 'right', maxLines: 4 },
+    colors: ['#5C3292', '#1A8763', '#871B47', '#999999'],
+    interpolateNulls: false,
+  };
+
+        var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 1100px; height: 700px;"></div>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i><strong>Note: 1 block averages the salaries of 40 teaching faculty</strong></i>
+  </body>
+</html>
